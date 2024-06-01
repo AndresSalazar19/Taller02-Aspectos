@@ -6,6 +6,7 @@ public aspect CheckAsurrance {
 	 
 	 before() : verifyAssurance() {
 	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Verificando...");
 	        System.out.println("Bienvenido! Estamos listos para agendar su cita. Escriba el nombre de tu mascota");
 	        String petName= sc.nextLine();
 	        System.out.println("Bienvenido " + petName + ".");
